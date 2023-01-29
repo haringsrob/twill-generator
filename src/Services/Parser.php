@@ -26,7 +26,7 @@ class Parser
             $this->blocks = collect();
 
             /** @var Dom\Node\HtmlNode $node */
-            foreach ($this->dom->find('div[twill-block]') as $node) {
+            foreach ($this->dom->find('*[twill-block]') as $node) {
                 $this->blocks->push(new Block($node->getAttribute('twill-block'), $node));
             }
 
