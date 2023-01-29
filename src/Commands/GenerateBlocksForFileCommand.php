@@ -56,6 +56,7 @@ class GenerateBlocksForFileCommand extends Command
 
                 if (
                     $force ||
+                    !$files->exists(resource_path($block->getResourcePath())) ||
                     (
                         $files->exists(resource_path($block->getResourcePath())) &&
                         $this->confirm($block->getResourcePath() . ' exists, do  you want to overwrite?')
@@ -71,6 +72,7 @@ class GenerateBlocksForFileCommand extends Command
 
                 if (
                     $force ||
+                    !$files->exists($block->getClassPath()) ||
                     (
                         $files->exists($block->getClassPath()) &&
                         $this->confirm(
