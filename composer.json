@@ -1,0 +1,46 @@
+{
+  "name": "haringsrob/twill-generator",
+  "description": ":package_description",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Harings Rob",
+      "email": "haringsrob@gmail.com",
+      "homepage": "https://github.com/haringsrob"
+    }
+  ],
+  "homepage": "https://github.com/haringsrob/twill-generator",
+  "keywords": [
+    "Laravel",
+    "TwillGenerator"
+  ],
+  "require": {
+    "illuminate/support": "~9",
+    "paquettg/php-html-parser": "3.1.1",
+    "nette/php-generator": "^4.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~9.0",
+    "orchestra/testbench": "~7"
+  },
+  "autoload": {
+    "psr-4": {
+      "Haringsrob\\TwillGenerator\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Haringsrob\\TwillGenerator\\Tests\\": "tests"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Haringsrob\\TwillGenerator\\TwillGeneratorServiceProvider"
+      ],
+      "aliases": {
+        "TwillGenerator": "Haringsrob\\TwillGenerator\\Facades\\TwillGenerator"
+      }
+    }
+  }
+}

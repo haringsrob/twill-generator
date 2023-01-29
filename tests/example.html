@@ -1,0 +1,51 @@
+<html>
+<head>
+    <title>Hello world</title>
+</head>
+Demo file from design
+<body>
+<div class="max-w-5xl mx-auto flex items-center mt-16 mb-16 md:mt-24 md:mb-24 px-8 md:px-0" twill-block="hero">
+    <div class="max-w-4xl flex-col">
+        <h1 class="text-5xl font-black" twill-wysiwyg="title">
+            The next generation page builder
+        </h1>
+        <div class="prose prose-lg py-8 max-w-3xl" twill-wysiwyg="text">
+            <p>The generator that simply takes your markup and converts it into building blocks</p>
+        </div>
+        <div>
+            <!-- Links todo -->
+            <a twill-href="link_url" href="https://webisolv.com/nl/contact-us"
+               class="inline px-6 py-4 border border-brown-900 text-brown-900 transition-colors hover:bg-brown-900 hover:text-white font-bold">
+                <span twill-text="link_text">Contact us</span>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="w-full mt-12 md:mt-24 bg-darkblue-500 text-brown-500 p-8 md:p-8 max-w-5xl mx-auto" twill-block="quote">
+    <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-12">
+        <div>
+            <h3 class="text-3xl font-bold" twill-text="title">This is a quote block</h3>
+        </div>
+        <div class="text-xl" twill-wysiwyg="quote">
+            <p>Written by rob!</p>
+        </div>
+    </div>
+    <img twill-image="content_image"
+         twill-image-ratio="16/9"
+         src="https://images.unsplash.com/photo-1674895676313-daeca780aeb0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=900&q=60"/>
+</div>
+
+<div twill-block="with-repeater">
+    <div twill-repeater="items" class="repeater-item">
+        <div twill-items-text="title">
+            Hello world
+        </div>
+    </div>
+    <div class="repeater-item">
+        <div>
+            Hello world 1
+        </div>
+    </div>
+</div>
+</body>
+</html>
