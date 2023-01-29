@@ -20,5 +20,5 @@ Add repo:
 Require:
 
 ``` bash
-$ composer require haringsrob/twill-generator
+$ composer require haringsrob/twill-generator --dev
 ```
